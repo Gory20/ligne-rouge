@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout Source') {
             steps {
-                git 'https://github.com/issa2580/ligne-rouge.git'
+                git 'https://github.com/Gory20/ligne-rouge.git'
             }
         }
         stage('Build Web Docker image') {
