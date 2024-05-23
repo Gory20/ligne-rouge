@@ -5,9 +5,9 @@ pipeline {
         webDockerImage = ""
         dbDockerImage = ""
         registryCredential = 'docker-credentiel'
-        KUBECONFIG = "/home/rootkit/.kube/config"
-        TERRA_DIR  = "/home/rootkit/ligne-rouge/terraform"
-        ANSIBLE_DIR = "/home/rootkit/ligne-rouge/ansible"
+        KUBECONFIG = "/home/Gory20/.kube/config"
+        TERRA_DIR  = "/home/Gory20/ligne-rouge/terraform"
+        ANSIBLE_DIR = "/home/Gory20/ligne-rouge/ansible"
     }
     agent any
     stages {
