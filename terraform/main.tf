@@ -8,13 +8,13 @@ terraform {
 }
 
 provider "kubernetes" {
-  config_path = "/home/rootkit/.kube/config"
+  config_path = "/home/gory/.kube/config"
 }
 
 # Terraform provisionne uniquement le cluster Kubernetes ici
 # Les déploiements et services Kubernetes seront gérés par Ansible
 
 output "kube_config" {
-  value = file("/home/rootkit/.kube/config")
+  value = file("/home/gory/.kube/config")
   sensitive = true
 }
