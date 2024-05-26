@@ -1,7 +1,7 @@
 pipeline {
     environment {
-        webDockerImageName = "martinez42/ligne-rouge-web"
-        dbDockerImageName = "martinez42/ligne-rouge-db"
+        webDockerImageName = "gorysow/ligne-rouge-web"
+        dbDockerImageName = "gorysow/ligne-rouge-db"
         webDockerImage = ""
         dbDockerImage = ""
         registryCredential = 'docker-secret'
