@@ -4,7 +4,7 @@ pipeline {
         dbDockerImageName = "gorysow/ligne-rouge-db"
         webDockerImage = ""
         dbDockerImage = ""
-        registryCredential = 'docker-credentiel'
+        registryCredential = 'docker-hub'
         KUBECONFIG = "/home/Gory20/.kube/config"
         TERRA_DIR  = "/home/Gory20/ligne-rouge/terraform"
         ANSIBLE_DIR = "/home/Gory20/ligne-rouge/ansible"
