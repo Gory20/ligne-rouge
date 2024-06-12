@@ -16,6 +16,13 @@ pipeline {
                 git 'https://github.com/Gory20/ligne-rouge.git'
             }
         }
+        stage('Build Docker images') {
+            steps {
+                script {
+                    sh 'docker-compose up --build -d'
+                }
+            }
+        }
         stage('Build Web Docker image') {
             steps {
                 script {
