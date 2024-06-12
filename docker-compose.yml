@@ -1,4 +1,4 @@
-version: "3.3"
+version: "5"
 
 services:
   web:
@@ -19,12 +19,13 @@ services:
     build:
       context: .
       dockerfile: Db.Dockerfile
-    volumes:
-      - mysql_data:/var/lib/mysql
+    #volumes:
+    #  - mysql_data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=redline
-   postgres:
+
+  postgres:
     build:
       context: .
       dockerfile: postgres.Dockerfile
@@ -55,8 +56,8 @@ services:
       - "9000:9000"
     depends_on:
       - postgres
-volumes:
-  mysql_data:
+#volumes:
+#  mysql_data:
 #  sonarqube_data:
 #  sonarqube_extensions:
 #  sonarqube_logs:
